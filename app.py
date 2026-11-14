@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the trained Decision Tree model
-model = joblib.load("kidney_model.pkl")
+model = joblib.load("CKD_Prediction_System.pkl")
 
 # Get feature columns directly from the trained model
 if not hasattr(model, "feature_names_in_"):
